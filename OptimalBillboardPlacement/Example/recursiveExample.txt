@@ -1,0 +1,58 @@
+getMaxInfluenceSet(3, {1,2,3,4,5,6}); <pick 3 4 5>
+	pick 1 getMaxInfluenceSet(2, {2,3,4,5,6}); <pick 3 5 >
+		pick 2 getMaxInfluenceSet(1, {3,4,5,6}); <pick 5>
+			pick 3 getMaxInfluenceSet(0, {4,5,6}); return null;
+			pick 4 getMaxInfluenceSet(0, {3,5,6}); return null;
+			pick 5 getMaxInfluenceSet(0, {3,4,6}); return null;
+			pick 6 getMaxInfluenceSet(0, {3,4,5}); return null;
+		pick 3 getMaxInfluenceSet(1, {2,4,5,6}); <pick 5>
+			pick 2 getMaxInfluenceSet(0, {4,5,6}); return null;
+			pick 4 getMaxInfluenceSet(0, {2,5,6}); return null;
+			pick 5 getMaxInfluenceSet(0, {2,4,6}); return null;
+			pick 6 getMaxInfluenceSet(0, {2,4,5}); return null;
+		pick 4 getMaxInfluenceSet(1, {2,3,5,6}); <pick 5>
+			pick 2 getMaxInfluenceSet(0, {3,5,6}); return null;
+			pick 3 getMaxInfluenceSet(0, {2,5,6}); return null;
+			pick 5 getMaxInfluenceSet(0, {2,3,6}); return null;
+			pick 6 getMaxInfluenceSet(0, {2,3,5}); return null;
+		pick 5 getMaxInfluenceSet(1, {2,3,4,6}); <pick 3>
+			pick 2 getMaxInfluenceSet(0, {3,4,6}); return null;
+			pick 3 getMaxInfluenceSet(0, {2,4,6}); return null;
+			pick 4 getMaxInfluenceSet(0, {2,3,6}); return null;
+			pick 6 getMaxInfluenceSet(0, {2,3,4}); return null;
+		pick 6 getMaxInfluenceSet(1, {2,3,4,5}); <pick 5>
+			pick 2 getMaxInfluenceSet(0, {3,4,5}); return null;
+			pick 3 getMaxInfluenceSet(0, {2,4,5}); return null;
+			pick 4 getMaxInfluenceSet(0, {2,3,5}); return null;
+			pick 5 getMaxInfluenceSet(0, {2,3,4}); return null;
+	pick 2 getMaxInfluenceSet(2, {1,3,4,5,6}); <pick 3 5>
+		pick 1 getMaxInfluenceSet(1, {3,4,5,6}); <pick 5>
+			pick 3 getMaxInfluenceSet(0, {4,5,6}); return null;
+			pick 4 getMaxInfluenceSet(0, {3,5,6}); return null;
+			pick 5 getMaxInfluenceSet(0, {3,4,6}); return null;
+			pick 6 getMaxInfluenceSet(0, {3,4,5}); return null;
+		pick 3 getMaxInfluenceSet(1, {1,4,5,6}); <pick 5>
+			pick 1 getMaxInfluenceSet(0, {4,5,6}); return null;
+			pick 4 getMaxInfluenceSet(0, {1,5,6}); return null;
+			pick 5 getMaxInfluenceSet(0, {1,4,6}); return null;
+			pick 6 getMaxInfluenceSet(0, {1,4,5}); return null;
+		pick 4 getMaxInfluenceSet(1, {1,3,5,6}); <pick 5>
+			pick 1 getMaxInfluenceSet(0, {3,5,6}); return null;
+			pick 3 getMaxInfluenceSet(0, {1,5,6}); return null;
+			pick 5 getMaxInfluenceSet(0, {1,3,6}); return null;
+			pick 6 getMaxInfluenceSet(0, {1,3,5}); return null;
+		pick 5 getMaxInfluenceSet(1, {1,3,4,6}); <pick 3>
+			pick 1 getMaxInfluenceSet(0, {3,4,6}); return null;
+			pick 3 getMaxInfluenceSet(0, {1,4,6}); return null;
+			pick 4 getMaxInfluenceSet(0, {1,3,6}); return null;
+			pick 6 getMaxInfluenceSet(0, {1,3,4}); return null;
+		pick 6 getMaxInfluenceSet(1, {1,3,4,5}); <pick 5>
+			pick 1 getMaxInfluenceSet(0, {3,4,5}); return null;
+			pick 3 getMaxInfluenceSet(0, {1,4,5}); return null;
+			pick 4 getMaxInfluenceSet(0, {1,3,5}); return null;
+			pick 5 getMaxInfluenceSet(0, {1,3,4}); return null;
+	pick 3 getMaxInfluenceSet(2, {1,2,4,5,6});
+	pick 4 getMaxInfluenceSet(2, {1,2,3,5,6});
+	pick 5 getMaxInfluenceSet(2, {1,2,3,4,6});
+	pick 6 getMaxInfluenceSet(2, {1,2,3,4,5});
+

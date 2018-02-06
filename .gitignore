@@ -1,0 +1,22 @@
+# Compiled class file
+*.class
+
+# R-Tree file
+*.rtree
+
+# METIS IO file
+METIS*.txt
+
+# Cluster file
+*Clusters.cluster
+
+# billboard result file
+*billboard*Result*.txt
+
+.DS_Store
+
+target/
+
+# JetBrain IDEA
+workspace.xml
+Project_Default.xml

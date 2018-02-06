@@ -1,0 +1,11 @@
+Budget 10.0, Trajectory 4, BillboardNumber 500, pow 1.0, Remove 0, AddBillboard(70) true
+Total Cost : 1994.0
+Total runtime: 8.943
+Total influences of all billboards : 8175
+Partition Enum Greedy result:
+B0(0)B10(130)
+Greedy result:
+B0(0)B10(129)
+Compare result:
+B0(0.0,0.0%)B10(1.0,0.77%)
+****************************************************************************
